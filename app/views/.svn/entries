@@ -1,0 +1,43 @@
+10
+
+dir
+28
+http://192.168.75.10/repos/shopping02/app/views
+http://192.168.75.10/repos/shopping02
+
+
+
+2012-11-30T07:19:38.325551Z
+28
+zl
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+348e8b8c-386d-11e2-a9bc-57b65f6e798f
+
+layouts
+dir
+
+product
+dir
+
+shopping_cart
+dir
+
+users
+dir
+
+admin
+dir
+

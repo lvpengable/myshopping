@@ -1,0 +1,20 @@
+<%@middle.each do |middle|%>
+		<%if @middle_category_id.to_i == middle.id%>
+			<div style="float :left;">
+				<%= link_to_remote middle.name, :url => {:controller => "/product",:action => "show_small_category",:middle_category_id => middle.id,:type => 2 } %>&nbsp;
+			
+		<%else%>
+			
+				<%= link_to_remote middle.name, :url => {:controller => "/product",:action => "show_small_category",:middle_category_id => middle.id } %>&nbsp;
+			</div>
+		<%end %>
+<%end %>
+
+
+<div>
+	<%@small.each do |small|%>
+		<div style="float :left;">
+		<%= link_to small.name , :controller => "/product",:action => "show_products", :id => small.id %>&nbsp;
+		</div>
+	<%end %>
+</div>

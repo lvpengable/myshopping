@@ -1,0 +1,44 @@
+     ÓÃshadowboxÔ¤ÀÀÍ¼Æ¬
+        »ù±¾ÐÅÏ¢
+        ¾ßÌåÊµÏÖ 
+
+¡ü
+»ù±¾ÐÅÏ¢ ?
+
+    ÔÚ¸Ã´¦ÏÂÔØ×îÐÂ°æ±¾µÄshadowbox
+
+    http://www.shadowbox-js.com/
+
+    µ±Ç°Ê¹ÓÃµÄ°æ±¾£ºshadowbox-build-3.0
+    fileshadowbox-build-3.0rc1.zip
+     
+
+¡ü
+¾ßÌåÊµÏÖ ?
+ 
+
+    ½«²å¼þ½âÑ¹µ½public\javascriptsÂ·¾¶ÏÂ,Ãû×ÖËæ±ãÈ¡£¬ÎÒÖ¸¶¨ÎÄ¼þÃûÎªshadowbox
+     
+    ½«shadowbox.cssÎÄ¼þ move to public\stylesheetsÎÄ¼þ¼ÐÏÂ
+     
+    ÔÚÒªÓ¦ÓÃµ½shadowboxÍ¼Æ¬Ô¤ÀÀµÄÄ£°åµÄ layoutÍ·ÎÄ¼þÖÐ¼ÓÈëjsºÍstyleÒýÓÃ
+
+     	<head>
+               <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    	   <%= javascript_include_tag :defaults %>
+    	   <%= javascript_include_tag 'shadowbox/shadowbox' %>
+    	   <%= stylesheet_link_tag 'shadowbox.css' %>
+    	</head>
+
+     
+    ÔÚÍ¼Æ¬Ô¤ÀÀµÄviewÖÐÔö¼Ó³õÊ¼»¯shadowboxµÄjs
+
+            <script type="text/javascript">
+               Shadowbox.init();
+            </script>
+
+    µ÷ÓÃshadowboxµÄÁ´½Ó
+
+    	<a href="<%= Image.get_image('stander', image) %>" rel="shadowbox">    #Image.get_imageÎªÔÚmodelÖÐ¶¨Òåµ÷ÓÃÍ¼Æ¬µÄ·½·¨
+    		<%= image_tag(Image.get_image('smallest', image)) %>
+    	</a>

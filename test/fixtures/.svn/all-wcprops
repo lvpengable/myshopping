@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/repos/shopping02/!svn/ver/24/test/fixtures
+END
+users.yml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repos/shopping02/!svn/ver/3/test/fixtures/users.yml
+END
+product_items.yml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/shopping02/!svn/ver/10/test/fixtures/product_items.yml
+END
+middle_categories.yml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/shopping02/!svn/ver/3/test/fixtures/middle_categories.yml
+END
+products.yml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/shopping02/!svn/ver/3/test/fixtures/products.yml
+END
+shopping_carts.yml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/shopping02/!svn/ver/10/test/fixtures/shopping_carts.yml
+END
+comments.yml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/shopping02/!svn/ver/5/test/fixtures/comments.yml
+END
+big_categories.yml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/shopping02/!svn/ver/3/test/fixtures/big_categories.yml
+END
+cart_items.yml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/shopping02/!svn/ver/24/test/fixtures/cart_items.yml
+END
+admins.yml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repos/shopping02/!svn/ver/4/test/fixtures/admins.yml
+END
+attachments.yml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/shopping02/!svn/ver/5/test/fixtures/attachments.yml
+END
+small_categories.yml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/shopping02/!svn/ver/3/test/fixtures/small_categories.yml
+END
+orders.yml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repos/shopping02/!svn/ver/5/test/fixtures/orders.yml
+END

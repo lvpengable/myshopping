@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/repos/shopping02/!svn/ver/14/lib
+END
+user_authenticated_test_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/shopping02/!svn/ver/3/lib/user_authenticated_test_helper.rb
+END
+admin_authenticated_system.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/shopping02/!svn/ver/4/lib/admin_authenticated_system.rb
+END
+user_authenticated_system.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/shopping02/!svn/ver/14/lib/user_authenticated_system.rb
+END
+admin_authenticated_test_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/shopping02/!svn/ver/4/lib/admin_authenticated_test_helper.rb
+END

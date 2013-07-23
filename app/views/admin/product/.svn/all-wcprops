@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repos/shopping02/!svn/ver/28/app/views/admin/product
+END
+product_add.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/shopping02/!svn/ver/28/app/views/admin/product/product_add.html.erb
+END
+_middle_category.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/shopping02/!svn/ver/16/app/views/admin/product/_middle_category.html.erb
+END
+list.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/shopping02/!svn/ver/26/app/views/admin/product/list.html.erb
+END
+product_detail.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/shopping02/!svn/ver/28/app/views/admin/product/product_detail.html.erb
+END
+product_update.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/shopping02/!svn/ver/28/app/views/admin/product/product_update.html.erb
+END
+_image_preview.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/shopping02/!svn/ver/22/app/views/admin/product/_image_preview.html.erb
+END
+_small_category.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/shopping02/!svn/ver/16/app/views/admin/product/_small_category.html.erb
+END

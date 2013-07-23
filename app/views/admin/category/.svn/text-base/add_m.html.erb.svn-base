@@ -1,0 +1,8 @@
+ <table border='1' cellspacing='0' cellpadding='20'>
+		   <% form_for :middle_category,:url => { :action => "add_m"} do|f|%>
+           <tr><td>中分类名称:</td> <td colspan='3'><%= f.text_field :name%></td></tr>	
+		   <tr><td>所属大分类ID:</td> <td colspan='3'><%= f.text_field :big_category_id%></td></tr>	  
+           <tr><td align='center' colspan='5'><%= f.submit '保存'%>
+		   <a href="javascript:history.go(-1);">返回</a></td></tr>
+		  <% end %>		
+</table>

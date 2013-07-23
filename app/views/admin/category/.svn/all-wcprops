@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repos/shopping02/!svn/ver/28/app/views/admin/category
+END
+_category_list.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/shopping02/!svn/ver/25/app/views/admin/category/_category_list.html.erb
+END
+_middle_list.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/shopping02/!svn/ver/28/app/views/admin/category/_middle_list.html.erb
+END
+add_b.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/shopping02/!svn/ver/28/app/views/admin/category/add_b.html.erb
+END
+add_s.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/shopping02/!svn/ver/28/app/views/admin/category/add_s.html.erb
+END
+_big_list.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/shopping02/!svn/ver/28/app/views/admin/category/_big_list.html.erb
+END
+list.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/shopping02/!svn/ver/23/app/views/admin/category/list.html.erb
+END
+detail_m.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/shopping02/!svn/ver/28/app/views/admin/category/detail_m.html.erb
+END
+update_m.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/shopping02/!svn/ver/28/app/views/admin/category/update_m.html.erb
+END
+_small_list.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/shopping02/!svn/ver/28/app/views/admin/category/_small_list.html.erb
+END
+detail_b.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/shopping02/!svn/ver/28/app/views/admin/category/detail_b.html.erb
+END
+update_b.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/shopping02/!svn/ver/28/app/views/admin/category/update_b.html.erb
+END
+add_m.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/shopping02/!svn/ver/28/app/views/admin/category/add_m.html.erb
+END
+detail_s.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/shopping02/!svn/ver/28/app/views/admin/category/detail_s.html.erb
+END
+update_s.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/shopping02/!svn/ver/28/app/views/admin/category/update_s.html.erb
+END

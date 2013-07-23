@@ -1,0 +1,3 @@
+<%@big_category.each do |big|%>
+  <%= link_to_remote big.name , :url => {:action => "show_middle_category",:big_category_id => big.id}%>
+<%end %>

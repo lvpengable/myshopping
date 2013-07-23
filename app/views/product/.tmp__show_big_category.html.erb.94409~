@@ -1,0 +1,3 @@
+<%@middle.each do |middle|%>
+	<p><%= link_to_remote middle.name, :url => {:action => "show_small_category",:middle_category_id => middle.id} %></p>
+<%end %>

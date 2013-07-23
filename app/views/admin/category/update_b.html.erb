@@ -1,0 +1,8 @@
+		 <table border='1' cellspacing='0' cellpadding='20'>
+			<% form_for :big_category,:url => { :action => "update_b"} do|f|%>
+			<%= f.hidden_field :id %>
+           <tr><td>大分类名称:</td> <td colspan='3'><%= f.text_field :name%></td></tr>	  
+           <tr><td align='center' colspan='5'><%= f.submit '更改'%>
+		   <a href="javascript:history.go(-1);">返回</a></td></tr>
+		  <% end %>		
+	</table>

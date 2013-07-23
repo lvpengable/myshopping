@@ -1,0 +1,38 @@
+
+        <div id= 'big'>
+        <div id= 'middle'>
+        <div id= 'small'>
+		 <div align= 'left' ><h2 >商品一览</h2></div>
+		<center>
+		<table border='1' cellspacing='0' cellpadding='20'>	
+    <tr><th>商品ID</th>
+        <th>商品名</th>
+		<th>添加时间</th>
+        <th>商品画像</th>
+		<th>操作</th>
+	</tr>
+	<tr>
+	<%  @products.each  do|product| %>
+	<tr>
+	<td> <%=product.id %> </td>	
+	<td> <%=product.name %> </td>	
+	<td> <%=product.created_at.strftime("%y-%m-%d %H:%M:%S")%> </td>
+	<td><div><% if !(ProductImage.find(:first,:conditions => ["own_id=?",product.id])).blank?%>
+		<%= image_tag Attachment.get_image  ProductImage.find(:first,:conditions => ["own_id=?",product.id]).file_name %><div></td>
+	    <% else %>暂无图片 <% end %>
+	<td><%= link_to '编辑',:controller => '/admin/product',:action => :to_update ,:id=>product.id %>&nbsp;
+	    <%= link_to '删除',:controller => '/admin/product',:action => :product_delete, :id => product.id%><br>
+		<%= link_to '商品详细',:controller => '/admin/product',:action => :to_detail,:id => product.id%>
+	</td>	
+    </tr>
+	<% end %>
+	<tr><td  colspan='5' align='right'>
+		<%= will_paginate @products %></td>
+	</tr>
+		<td colspan='5' align='center'><%=link_to '添加商品','to_add' %></td>
+	</tr>
+	</center>
+	</table>	
+     </div>
+     </div>
+	 </div>	

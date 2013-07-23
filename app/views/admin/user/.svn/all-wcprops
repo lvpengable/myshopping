@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/repos/shopping02/!svn/ver/28/app/views/admin/user
+END
+user_add.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/shopping02/!svn/ver/28/app/views/admin/user/user_add.html.erb
+END
+user_list.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/shopping02/!svn/ver/25/app/views/admin/user/user_list.html.erb
+END
+list.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/shopping02/!svn/ver/28/app/views/admin/user/list.html.erb
+END
+user_detail.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/shopping02/!svn/ver/28/app/views/admin/user/user_detail.html.erb
+END
+user_update.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/shopping02/!svn/ver/28/app/views/admin/user/user_update.html.erb
+END

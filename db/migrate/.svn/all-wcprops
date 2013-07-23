@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/repos/shopping02/!svn/ver/24/db/migrate
+END
+20121128013435_add_columns_to_products.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/shopping02/!svn/ver/14/db/migrate/20121128013435_add_columns_to_products.rb
+END
+20121127105210_create_middle_categories.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/shopping02/!svn/ver/3/db/migrate/20121127105210_create_middle_categories.rb
+END
+20121127105225_create_small_categories.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/shopping02/!svn/ver/8/db/migrate/20121127105225_create_small_categories.rb
+END
+20121129081116_create_cart_items.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/shopping02/!svn/ver/24/db/migrate/20121129081116_create_cart_items.rb
+END
+20121128014321_create_shopping_carts.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/shopping02/!svn/ver/10/db/migrate/20121128014321_create_shopping_carts.rb
+END
+20121127115158_create_attachments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/shopping02/!svn/ver/5/db/migrate/20121127115158_create_attachments.rb
+END
+20121127122859_create_comments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/shopping02/!svn/ver/5/db/migrate/20121127122859_create_comments.rb
+END
+20121127105134_create_products.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/shopping02/!svn/ver/7/db/migrate/20121127105134_create_products.rb
+END
+20121127105718_create_admins.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/shopping02/!svn/ver/4/db/migrate/20121127105718_create_admins.rb
+END
+20121127104842_create_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/shopping02/!svn/ver/3/db/migrate/20121127104842_create_users.rb
+END
+20121127105153_create_big_categories.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/shopping02/!svn/ver/3/db/migrate/20121127105153_create_big_categories.rb
+END
+20121127122919_create_orders.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/shopping02/!svn/ver/7/db/migrate/20121127122919_create_orders.rb
+END
+20121128014547_create_product_items.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/shopping02/!svn/ver/10/db/migrate/20121128014547_create_product_items.rb
+END

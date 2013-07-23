@@ -1,0 +1,5 @@
+<%@product.each do |p|%>
+	<%= p.product_pic%>
+	<%= p.description%>
+	<%= p.name %>
+<%end%>

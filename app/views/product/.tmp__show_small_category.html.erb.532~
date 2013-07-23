@@ -1,0 +1,11 @@
+<li id="middle_category_id">
+<%@middle.each do |middle|%>
+			<%= link_to_remote middle.name, :url => {:action => "show_small_category",:middle_category_id => middle.id,:type => 2} %>
+<%end %>
+</li>
+<%@small.each do |small|%>
+	<%= link_to_remote small.name , :url => {:action => "show_products", :id => small.id} %>
+<%end %>
+
+
+

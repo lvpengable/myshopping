@@ -1,0 +1,13 @@
+<%@product.each do |p|%>
+	<ul>
+		<li>
+		<%= p.product_pic%>
+		<%= p.name %>
+描述：	<%= p.description%>
+原价：	<%= p.fixed_price%>
+促销价：	<%= p.dang_price%>
+<%=link_to '详细' , :action => "product_detail"%>
+		</li>
+	</ul>
+<%end%>
+

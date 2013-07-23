@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/repos/shopping02/!svn/ver/24/test/unit
+END
+big_category_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/shopping02/!svn/ver/3/test/unit/big_category_test.rb
+END
+user_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/repos/shopping02/!svn/ver/3/test/unit/user_test.rb
+END
+product_item_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/shopping02/!svn/ver/10/test/unit/product_item_test.rb
+END
+product_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repos/shopping02/!svn/ver/3/test/unit/product_test.rb
+END
+shopping_cart_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/shopping02/!svn/ver/10/test/unit/shopping_cart_test.rb
+END
+comment_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repos/shopping02/!svn/ver/5/test/unit/comment_test.rb
+END
+small_category_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/shopping02/!svn/ver/3/test/unit/small_category_test.rb
+END
+cart_item_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/shopping02/!svn/ver/24/test/unit/cart_item_test.rb
+END
+admin_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repos/shopping02/!svn/ver/4/test/unit/admin_test.rb
+END
+attachment_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/shopping02/!svn/ver/5/test/unit/attachment_test.rb
+END
+middle_category_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/shopping02/!svn/ver/3/test/unit/middle_category_test.rb
+END
+order_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repos/shopping02/!svn/ver/5/test/unit/order_test.rb
+END

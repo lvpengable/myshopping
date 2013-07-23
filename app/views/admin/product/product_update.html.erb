@@ -1,0 +1,32 @@
+	<iframe name="iframe" style="display:none;"></iframe>
+	<body>
+	<table border='1' cellspacing='0' cellpadding='20'>
+    <% form_for :product,:url =>{:action => :product_update},:html => { :multipart => true, :target => 'iframe' } do |f| %>
+     <%= f.hidden_field :id %>
+     <tr><td>商品名称:</td><td><%= f.text_field :name %></td>
+	 <tr><td>商品分类编辑</td><td>
+	 	<%= select_tag 'big_category_id',options_for_select([['','']] + @big_categorys),
+                :onchange => remote_function(:url => {:controller => '/admin/product', :action => :get_middle},
+                :with => "'big_category_id=' + value" )  %>
+			  <div id = "m_id"><%= select_tag ''%></div>
+			  <div id = "s_id"><%= select_tag ''%></div>
+	    </td></tr>
+     <tr><td>商品描述:</td><td><%= f.text_area  :description %></td></tr>	
+     <tr><td>图片显示:</td><td><div>
+     	<% if !@attachment.blank?%>
+				<%= image_tag Attachment.get_image @attachment.file_name %>
+				<% else %> 暂无图片 <% end %>	     
+      </div></td>	
+      <tr><td>上传图片:</td><td>
+      	<%= file_field(:attachment, :image, :onchange => 'this.form.action = "/admin/product/image_preview";this.form.submit();' ) %>
+      <div id="image_preview">
+   	       
+   		   </div>
+	  </td> </tr>
+	 <tr><td colspan='3' align='center'><%= button_to_function '更改', "this.form.action='#{url_for :action => 'product_update'}';this.form.target='';this.form.submit()"%><td></tr>
+    <% end %>
+	</table>
+    <%= link_to '返回', "/admin/product/list" %>
+</body>
+
+

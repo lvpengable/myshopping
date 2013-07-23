@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/repos/shopping02/!svn/ver/21/config
+END
+routes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/repos/shopping02/!svn/ver/2/config/routes.rb
+END
+database.yml.sample
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/shopping02/!svn/ver/6/config/database.yml.sample
+END
+boot.rb
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/repos/shopping02/!svn/ver/2/config/boot.rb
+END
+app_config.yml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/repos/shopping02/!svn/ver/21/config/app_config.yml
+END
+environment.rb
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/repos/shopping02/!svn/ver/14/config/environment.rb
+END

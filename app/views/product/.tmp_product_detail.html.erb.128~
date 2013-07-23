@@ -1,0 +1,30 @@
+<h1>商品详细信息</h1>
+<div>
+<%= image_tag @p.product_pic%><br/>
+<table>
+	<tr>
+		<td align='center'>
+				<%= @p.name %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		商品描述：	<%= @p.description%><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		原价：	￥<%= @p.fixed_price%><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		促销价：	￥<%= @p.dang_price%><br/>
+		</td>
+	</tr>
+</table>
+<p><%=link_to '购买' , :action => "buy"%></p>
+<p><%=link_to_remote '加入购物车' ,:url => {:controller => "/shopping_cart" , :action => "add_to_cart",:id => @p.id}%></p>
+</div>
+
+

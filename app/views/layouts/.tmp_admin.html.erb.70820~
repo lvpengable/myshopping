@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <title> shopping </title>
+ </head>
+ <body >
+  <%=javascript_include_tag :defaults %>
+  <table border='0' width="70%" align="center" bgcolor="lightgray">
+            <tr bgcolor="gray">
+                <td align="center" colspan='5' >
+                    <h2> shopping系统 </h2>
+                </td>
+            </tr>
+            <%if session[:admin].present? %>
+            <tr border=0 bgcolor="gray">
+                <td align="left">
+                    <%= link_to '首页    ','/admin/product/list' %>
+                </td>
+                <td align="right">
+                    <font color="blue">
+                        欢迎,<%=current_admin.login %>
+                    </font>
+                    <%= link_to '|        退出','/admin/admin/logout' %>
+                </td>
+            </tr>
+            <%end %>
+            <tr>
+                
+                <td align="center" colspan='5'>
+                    <font color="red">
+                        <%=flash[:notice] %>
+                    </font>
+                    <%= yield %>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan='5' bgcolor="gray">
+                    <%=Time.now.strftime("%y-%m-%d %H:%M:%S") %>
+                </td>
+            </tr>
+        </table>
+ </body>
+</html>

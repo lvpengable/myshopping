@@ -1,0 +1,26 @@
+<p>商品一览</p>
+ <div id='show_products' bgcolor="gray">
+	<%if @product.present?%>
+        <%@product.each do |pro| %>
+			<div style="float :left; margin-left :80px;margin-top :80px; width :150px;height :250px;">
+	                <%= image_tag (pro.product_pic) %><br/>
+	                <%= pro.name %><br/>
+			原价：	<%= pro.fixed_price%><br/>
+			促销价：	<%= pro.dang_price%><br/>
+					<%=link_to '详细' , :action => "product_detail",:id => pro.id%>
+			</div>
+        <%end %>
+		<%if @will_paginate.present? %>
+			<%= will_paginate @product %>
+		<%end %>
+	<%else%>
+	没有搜索到商品
+	<%end%>
+	<tr>
+		<td align='right' colspan='4'>
+			<%= link_to 'More>>>',  :action => 'show_all' %>
+		</td>
+	</tr>
+</div>
+
+

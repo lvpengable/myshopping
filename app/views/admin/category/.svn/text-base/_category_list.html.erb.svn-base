@@ -1,0 +1,3 @@
+<%= link_to_remote "大分类",:url => {:controller => '/admin/category',:action => :big_list}%>&nbsp;&nbsp;
+<%= link_to_remote "中分类",:url => {:controller => '/admin/category',:action => :middle_list}%>&nbsp;&nbsp;
+<%= link_to_remote "小分类",:url => {:controller => '/admin/category',:action => :small_list}%>

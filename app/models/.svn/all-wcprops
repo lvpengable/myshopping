@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/repos/shopping02/!svn/ver/24/app/models
+END
+big_category.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/shopping02/!svn/ver/14/app/models/big_category.rb
+END
+user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/repos/shopping02/!svn/ver/11/app/models/user.rb
+END
+product_item.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/shopping02/!svn/ver/12/app/models/product_item.rb
+END
+product.rb
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/repos/shopping02/!svn/ver/14/app/models/product.rb
+END
+shopping_cart.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/shopping02/!svn/ver/31/app/models/shopping_cart.rb
+END
+comment.rb
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/repos/shopping02/!svn/ver/11/app/models/comment.rb
+END
+product_image.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/shopping02/!svn/ver/22/app/models/product_image.rb
+END
+small_category.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/shopping02/!svn/ver/14/app/models/small_category.rb
+END
+cart_item.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repos/shopping02/!svn/ver/31/app/models/cart_item.rb
+END
+admin.rb
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/repos/shopping02/!svn/ver/4/app/models/admin.rb
+END
+attachment.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repos/shopping02/!svn/ver/22/app/models/attachment.rb
+END
+middle_category.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/shopping02/!svn/ver/14/app/models/middle_category.rb
+END
+order.rb
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/repos/shopping02/!svn/ver/11/app/models/order.rb
+END

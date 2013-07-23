@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/repos/shopping02/!svn/ver/20/test/unit/helpers
+END
+product_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/shopping02/!svn/ver/3/test/unit/helpers/product_helper_test.rb
+END
+shopping_cart_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/shopping02/!svn/ver/15/test/unit/helpers/shopping_cart_helper_test.rb
+END
+base_controller_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/shopping02/!svn/ver/11/test/unit/helpers/base_controller_helper_test.rb
+END
+user_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/shopping02/!svn/ver/20/test/unit/helpers/user_helper_test.rb
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/repos/shopping02/!svn/ver/26/app/views/admin/admin
+END
+signup.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/shopping02/!svn/ver/4/app/views/admin/admin/signup.rhtml
+END
+index.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/shopping02/!svn/ver/4/app/views/admin/admin/index.rhtml
+END
+login.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/shopping02/!svn/ver/26/app/views/admin/admin/login.rhtml
+END

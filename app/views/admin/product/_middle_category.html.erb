@@ -1,0 +1,4 @@
+
+<%= select_tag :middle_category_id,options_for_select([['','']] + @name.uniq),
+                :onchange => remote_function(:url => {:controller => '/admin/product', :action => :get_small},  
+                :with => "'middle_category_id=' + value" )  %>

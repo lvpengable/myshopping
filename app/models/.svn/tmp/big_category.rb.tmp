@@ -1,0 +1,10 @@
+class BigCategory < ActiveRecord::Base
+<<<<<<< .mine
+  has_many :middle_categorys
+=======
+  
+>>>>>>> .r13
+  def self.default_new
+    BigCategory.create([{:name => "服饰鞋包"},{:name => "礼品首饰"},{:name => "美容美发"}])
+  end
+end

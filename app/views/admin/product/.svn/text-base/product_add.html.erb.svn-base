@@ -1,0 +1,27 @@
+
+	<iframe name="iframe" style="display:none;"></iframe>
+		<table border='1' cellspacing='0' cellpadding='20'>
+			<% form_for :product,:url => { :action => "product_add"},:html => { :multipart => true, :target => 'iframe' } do|f|%>
+           <tr><td>商品名称:</td> <td colspan='3'><%= f.text_field :name%></td></tr>
+		   <tr><td>商品分类</td><td>
+		   	<%= select_tag 'big_category_id',options_for_select([['','']] + @big_categorys),
+                :onchange => remote_function(:url => {:controller => '/admin/product', :action => :get_middle},
+                :with => "'big_category_id=' + value" )  %>
+			  <div id = "m_id"><%= select_tag ''%></div>
+			  <div id = "s_id"><%= select_tag ''%></div>
+			  </td>	
+			</tr>
+           <tr><td>商品描述:</td><td><%= f.text_area :description%></td></tr>
+           <tr><td>商品价格:</td><td><%= f.text_field :fixed_price%></td></tr>
+		   <tr><td>上传图片</td><td> 
+		   <%= file_field(:attachment, :image, :onchange => 'this.form.action = "/admin/product/image_preview";this.form.submit();' ) %>
+		   <div id="image_preview">
+   	       
+   		   </div>
+		   </td><tr>		  
+           <tr><td align='center' colspan='2'><%= button_to_function '保存', "this.form.action='#{url_for :action => 'product_add'}';this.form.target='';this.form.submit()"%>
+		   <%=link_to '返回' ,:controller => "/admin/product",:action => :list %></td></tr>
+		  <% end %>		
+	</table>
+
+

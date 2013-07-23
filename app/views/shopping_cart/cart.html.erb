@@ -1,0 +1,59 @@
+<tr>
+	<td colspan='4' align='center' bgcolor='yellow'>
+			我的购物车
+	</td>
+</tr>
+<tr>
+	<th>
+		商品名
+	</th>
+	<th>
+		购买数量
+	</th>
+	<th>
+		商品总价
+	</th>
+	<th>
+		操作
+	</th>
+</tr>
+<%if @cart.try(:items).blank? %>
+	<tr>
+		<td>
+			您还没选购商品
+			<%= link_to '去选购' , :controller => "/product" %>
+		</td>
+	</tr>
+<%else%>
+	<%@cart.items.each do |item|%>
+	  	<tr>
+	  		<td>
+	  			<%= item.title %>
+	  		</td>
+			<td >
+				<%= item.quantity%>
+			</td>
+			<td>
+				<%= item.price%>
+			</td>
+			<td>
+				<%form_tag :action => 'update_quantity' do%>
+						<%= hidden_field_tag 'id' , item.product.id%>
+						<%= text_field_tag 'quantity',item.quantity %>
+				<%= submit_tag '更改数量'%>
+			<span style="color :#FF0084;"><%=  flash["quantity_'#{item.product.id}'"]%></span>	
+				<%end %>
+				<%= link_to '删除', :action => :delete , :id => item.product.id%>
+			</td>
+		</tr>
+	<%end %>
+<tr>
+	<td colspan='5'>
+		<%= link_to '清空购物车' , :action => :empty_cart %>
+	</td>
+	<td>
+		<%=link_to '购买' , :action => "buy"%>
+	</td>
+</tr>
+<%end %>
+

@@ -1,0 +1,14 @@
+<%if !@product.blank?%>
+<%@product.each do |p|%>
+	<td>
+		<%= image_tag p.product_pic%><br/>
+		<%= p.name %><br/>
+描述：	<%= p.description%><br/>
+原价：	<%= p.fixed_price%><br/>
+促销价：	<%= p.dang_price%><br/>
+<%=link_to '详细' , :action => "product_detail"%>
+	</td>
+<%end%>
+<%else%>
+	这个类别还没有商品
+<%end%>

@@ -1,0 +1,46 @@
+<div width='30%' align='left'>
+            <%@big_category.each do |big| %>
+              <%= link_to_remote big.name , :url => {:action => "show_middle_category",:big_category_id => big.id}%>
+            <%end %>
+</div>
+
+<div id='show_middle_category' align='left'>
+	
+</div>
+
+<div id='show_small_category' align='left'>
+	
+</div>
+
+
+<table>
+   
+	<tr>
+        <td>
+        	<%form_tag 'search_products' do %>
+        	<%= text_field_tag  'query' %>
+			<%= button_to_function '搜索', "this.form.action='#{url_for :action => 'search_products'}';this.form.target='_self';this.form.submit()" %>
+			<%end %>
+        </td>
+	</tr>
+	<tr>
+        <td>
+            <p>
+                商品一览
+            </p>
+            <div id='show_products'>
+                <%@default_product.each do |pro| %>
+	            	<ul>
+						<li>
+			                <%= image_tag (pro.product_pic) %>
+			                <%= pro.name %>
+					描述：      <%= pro.description%>
+					原价：	<%= pro.fixed_price%>
+					促销价：	<%= pro.dang_price%>
+						</li>
+					</ul>
+                <%end %>
+            </div>
+        </td>
+    </tr>
+</table>

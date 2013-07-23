@@ -1,0 +1,3 @@
+<%@small.each do |small|%>
+	<%= link_to_remote small.name , :url => {:action => "show_products", :id => small.id} %>
+<%end %>

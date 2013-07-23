@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+    	<%= javascript_include_tag :defaults%>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <title>shopping</title>
+    </head>
+    <body >
+	<table border='1' width="95%" align="center" bgcolor="lightgray">
+		<tr>
+			<td>
+				<%= link_to '首页', :controller => '/product' , :action => :index%>
+				<%= link_to '我的购物车' ,:controller => '/shopping_cart' , :action => :cart%>
+			</td>
+			<td align='right'>
+				<%if session[:user] != nil %>
+					  欢迎,<%= User.find_by_id(session[:user]).try :login %>
+					 <%= link_to '退出', :controller => '/users', :action => :logout %>
+			    <%else %>
+					<%= link_to '用户注册', :controller => '/users', :action => :signup%>
+			   		 <%= link_to '用户登陆',:controller => '/users', :action => :login %>
+			    <%end %>
+			   <%= flash[:notice] %> 
+			</td>
+    	</tr>
+		<tr>
+			<td align='center' bgcolor="lightgray" colspan='2' style='color :#0033CC;'>
+					<h2> LOGO </h2>
+			</td>
+		</tr>
+		<tr>
+			<td style='width :150px' colspan='5' align='center'>
+				<div id='show_big_category'>
+				        <%@big_category.each do |big| %>
+					<div style="float :left;">
+						  <%= link_to_remote big.name , :url => {:controller => "/product" , :action => "show_middle_category",:big_category_id => big.id}%>&nbsp;
+					</div>
+				        <%end %>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan='4'>
+				<table border='1' align='center' width='95%' height='90%' bgcolor='gray'>
+					 <td>
+						<% form_tag  '/product/search_products' do %>
+						   <%= text_field_tag  'query' %>
+						   <%= submit_tag '搜索' %>
+						<% end %>
+	       			 </td>
+			        <tr border=0 >
+			            <td align='center' colspan='3'>
+			                <%= yield %>
+			            </td>
+			        </tr>
+				</table>
+			</td>
+		</tr>
+	        <tr>
+	            <td align='center' colspan='10'>
+	             <%=Time.now.strftime("%y-%m-%d %H:%M:%S") %>  
+	            </td>
+	        </tr>
+    </table>
+</body>
+</html>

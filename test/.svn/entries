@@ -1,0 +1,77 @@
+10
+
+dir
+28
+http://192.168.75.10/repos/shopping02/test
+http://192.168.75.10/repos/shopping02
+
+
+
+2012-11-29T13:15:41.639869Z
+24
+lp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+348e8b8c-386d-11e2-a9bc-57b65f6e798f
+
+unit
+dir
+
+test_helper.rb
+file
+
+
+
+
+2012-11-27T10:45:25.671875Z
+e297614c72684d065aef001f86188732
+2012-11-27T10:48:11.722784Z
+2
+lp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1800
+
+performance
+dir
+
+functional
+dir
+
+integration
+dir
+
+fixtures
+dir
+

@@ -1,0 +1,17 @@
+<table border='1' cellspacing='0' cellpadding='20'>	
+    <tr><th>ID</th>
+        <th>中分类名称</th>
+		<th>所属大分类ID</th>
+		<th>所属大分类名称</th>
+		<th>created_at</th>
+        <th>updated_at</th>
+	</tr>
+	<tr>
+	<td><%= @middle_category.id%></td><td><%= @middle_category.name%></td>
+	<td><%= @middle_category.big_category_id%></td><td><%=@middle_category.big_category.name %></td>
+	<td><%= @middle_category.created_at%></td><td><%= @middle_category.updated_at%></td>	
+	</tr>
+	<tr>
+		<td colspan='6' align='center'><a href="javascript:history.go(-1);">返回</a></td>
+	</tr>
+	</table>	

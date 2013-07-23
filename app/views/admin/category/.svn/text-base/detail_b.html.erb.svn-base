@@ -1,0 +1,13 @@
+<table border='1' cellspacing='0' cellpadding='20'>	
+    <tr><th>ID</th>
+        <th>大分类名称</th>
+		<th>created_at</th>
+        <th>updated_at</th>
+	</tr>
+	<tr>
+	<td><%= @big_category.id%></td><td><%= @big_category.name%></td><td><%= @big_category.created_at%></td><td><%= @big_category.updated_at%></td>	
+	</tr>
+	<tr>
+		<td colspan='4' align='center'><a href="javascript:history.go(-1);">返回</a></td>
+	</tr>
+	</table>	

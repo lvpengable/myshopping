@@ -1,0 +1,15 @@
+<%if !@product.blank?%>
+	<%@product.each do |p|%>
+		<div style="float :left; margin-left :80px;margin-top :80px; width :150px;height :250px;background-color :#ffffff">
+			<%= image_tag p.product_pic%><br/>
+			<%= p.name %><br/>
+	描述：	<%= p.description%><br/>
+	原价：	<%= p.fixed_price%><br/>
+	促销价：	<%= p.dang_price%><br/>
+			<%=link_to '详细' , :action => "product_detail"%>
+		</div>
+	<%end%>
+	<%= will_paginate @product %>
+<%else%>
+	这个类别还没有商品
+<%end%>

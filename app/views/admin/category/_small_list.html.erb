@@ -1,0 +1,26 @@
+  <div id= 'big'>
+  <div id= 'middle'>
+  <div align= 'left' ><h2 >小分类一览</h2></div>
+  <table border='1' cellspacing='0' cellpadding='20'>	
+    <tr><th>ID</th>
+        <th>小分类名称</th>
+		<th>所属中分类ID</th>
+		<th>created_at</th>
+        <th>updated_at</th>
+		<th>操作</th>
+	</tr>
+	<% @small_categorys.each do|s| %>
+	<tr>
+	<td><%= s.id%></td><td><%= s.name%></td><td><%= s.middle_category_id%></td><td><%= s.created_at%></td><td><%= s.updated_at%></td>
+	<td><%=link_to '详细',:controller =>'/admin/category',:action => :detail_s ,:id =>s.id %>&nbsp;
+	   <%=link_to '编辑',:controller => '/admin/category',:action => :to_update_s,:id =>s.id %>
+	   <%=link_to '删除',:controller =>'/admin/category',:action => :delete_s ,:id =>s.id %>
+	 </td>	
+	</tr><% end %>
+	
+	<tr>
+		<td colspan='6' align='center'><%=link_to '添加小分类','/admin/category/to_add_s' %></td>
+	</tr>
+	</table>
+	</div>
+	</div>

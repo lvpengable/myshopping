@@ -1,0 +1,5 @@
+<%@big_category.each do |big|%>
+	<td>
+  	<%= link_to_remote big.name , :url => {:controller => "/product" , :action => "show_middle_category",:big_category_id => big.id}%>
+  	</td>
+<%end %>

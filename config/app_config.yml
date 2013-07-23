@@ -1,0 +1,271 @@
+#*************************
+#  アプリケーション値設定ファイル
+#-------------------------
+# 書式 : YAML
+# 使用方法 :
+#   APP_CONFIG[設定名] として呼び出す。
+#   (例) :sms -> :watermarks_dir_from_sms 参照
+#        APP_CONFIG[:sms][:watermarks_dir_from_sms]
+#
+# 注意 :
+#   RubyからAPP_CONFIGのキーでシンボルで参照出来るように、
+#   必ずキーの先頭に : (colon) をつけること。
+#   (例) OKなパターン :admin -> APP_CONFIG[:admin] で参照出来る
+#        NGなパターン admin -> APP_CONFIG['admin'] としないと参照できない。
+# 　全部シンボルで参照出来るよう、厳守のこと。　
+#
+#*************************
+:default_photo: "/user/images/course/no_image70.jpg"
+:user_default_photo: "/user/images/course/user_no_image70.jpg"
+:meta_description: "スクールシティは、インターネット上の教育事業（ネットスクール）の集合体です。受講者は、スクールシティに所属することで、地域・時間に制約されることなく総合的な教育サービスを受けることができます。"
+#商品一览
+:per_page: "5"
+# content allow
+
+:content_allow_country: "JP"
+
+#login session time out
+:login_session_time_out: 20
+
+#logo preview
+:preview:
+    :path: "/images/preview_image"
+    :size: "70X70"
+
+:file_share_path: "file_share"
+#ファイル共有一覧
+:file_share_list_per_page: 15
+
+:file_share_replay_list: 5
+    
+#size of upload image
+:upload:
+    :size:
+      :big: "400X400"
+      :middle: "200X200"
+      :small: "81X81"
+      :live_logo: "196X148"
+    :path:
+      :original: "/images/original"
+      :big: "/images/big"
+      :middle: "/images/middle"
+      :small: "/images/small"
+      :live_logo: "/images/live_logo"
+
+      
+:format: ['.jpg', '.png', '.jpeg', '.gif', '.bmp', '.JPG', '.PNG', 'JPEG', '.GIF', '.BMP']
+
+:freepage:
+  :url: https://www.v-schoolcity.new
+#ページ分割
+#コース登録/関連するコース
+:pay_course_per_page: 15
+#コース一覧
+:course_per_page: 15
+#コース一覧
+:course_list_per_page: 18
+#カテゴリ一覧
+:categories_per_page: 15
+#教材一覧
+:contents_per_page: 15
+:contents_per_page_a: 20
+#科目一覧
+:subjects_per_page: 10
+#管理者一覧
+:admin_per_page: 15
+
+# college per page
+:college_per_page: 15
+
+:teacher_per_page: 30
+
+:purchase_per_page: 30
+#ソーシャルストリーム一覧
+:comment_per_page: 10
+#edit by lb
+:libraries_per_page: 300
+:exams_per_page: 15
+:questions_per_page: 15
+:homeworks_per_page: 15
+# お気に入り一覧
+:favorite_per_page: 15
+# 決済履歴一覧
+:purchase_log_per_page: 15
+#お知らせ一覧
+:info_list_per_page: 15
+:sc_info_list_per_page: 15
+:info_list_for_coursename_per_page: 10
+#
+:text_storm_per_page: 15
+#add by ll 20120816
+:login_log_per_page: 100
+# ライブラリ一覧
+:lib_per_page: 50
+
+# 授業アーカイブ
+:archive_per_page: 50
+# 受信メッセージ
+:receiver_per_page: 50
+
+# 送信済メッセージ
+:sender_per_page: 50
+#jpnews list size
+:ajax_for_jpnews_size: 5
+
+# allow in class minutes
+:all_inclass_minutes: 10
+
+:all_showclass_minutes: 5
+
+:page:
+  # 受講生一覧
+  :user_per_page: 50
+  #選択/公開テスト
+  :add_exam_page: 50
+  #ライブ授業一覧
+  :live_per_page: 50
+
+#:string:
+#  :admin:
+#    :course_detail_subject_s1: Add contents successfully!
+#    :course_detail_subject_s1: No content is choosed!
+:mypage:
+  :favorites: 10
+  :infos: 10
+  :homeworks: 15
+  :recent_contents: 3
+  :messages: 20
+  :message_words: 20
+  :tests: 20
+  :order_live: 10
+:right_nav_word_limit: 60
+:calendar_live_words: 25
+:order_days_limit: 60
+
+# local wowza
+#:wowza_host_local:   127.0.0.1
+#:iphone_player_local_url:  "http://127.0.0.1:1935/vod/mp4:"
+#:andrior_player_server_url:  "rtsp://202.210.133.91:1935/vod/mp4:"
+#:iphone_player_server_url:  "http://202.210.133.91:1935/vod/mp4:"
+#:andrior_player_local_url:  "rtsp://127.0.0.1:1935/vod/mp4:"
+
+# server wowza
+#=begin
+:wowza_host_server:  202.210.133.91
+:iphone_player_suffix:  "/playlist.m3u8"
+:iphone_player_server_url:  "http://202.210.133.91:1935/schoolcity/mp4:"
+:andrior_player_server_url:  "rtsp://202.210.133.91:1935/schoolcity/mp4:"
+:php_server_url:  http://202.210.133.91/index.php
+:pc_player_server_url:  rtmp://202.210.133.91:1935/schoolcity/
+:play_movie_temp_path: ""
+#=end
+
+# 200.62server wowza
+#=begin
+#:wowza_host_server:  202.210.133.154
+#:iphone_player_suffix:  "/playlist.m3u8"
+#:iphone_player_server_url:  "http://202.210.133.154:1935/schoolcity/mp4:"
+#:andrior_player_server_url:  "rtsp://202.210.133.154:1935/schoolcity/mp4:"
+#:php_server_url:  http://202.210.133.154/index.php
+#:pc_player_server_url:  rtmp://202.210.133.154:1935/schoolcity/
+#:play_movie_temp_path: ""
+#=end
+
+# email address
+:bcc_school_email: "t.nishi@funward.jp"
+:from_school_email: "info@scweb.jp"
+:inquiry_email: "contact@livegate.biz"
+
+#order_code_length
+:order_code_length: 20
+
+:mail: 'no-reply@scweb.jp'
+
+:message_folder: 15
+# add cells after the excel_table
+:last_excel_cell: 19
+# insert the num
+:insert_rows: 20
+
+# excel per page
+:excel_per_page: 20
+
+# csv_import sample
+:csv_sample_path: "csv_sample_import/sample.csv"
+
+# course csv sample export
+:csv_sample_path_course: "csv_sample_import/course.csv"
+:csv_sample_path_content: "csv_sample_import/content_sample.csv"
+
+# exam csv sample export
+:csv_sample_path_exam: "csv_sample_import/exam.csv"
+
+#user rest date sample export
+:user_rest_csv_sample_path: "csv_sample_import/user_rest_sample.csv"
+
+#user rest date sample export
+:enquete_user_csv_sample_path: "csv_sample_import/enquete_user_sample.csv"
+# slident content
+:slide_content: 2
+
+# collect_live csv sample export add by wxx 20121105
+:csv_sample_path_collect_live: "csv_sample_import/yanxiu_user_hope_sample.csv"
+
+# live record ip address
+#:recode_ip:
+#  :ip_1: "49.212.96.162"
+#  :ip_2: "49.212.96.164"
+#  :ip_3: "49.212.96.165"
+
+#record server port
+:record_server_port: 3011
+
+
+#サンクスメール　運営側送信先
+#schoolcity@with-us.co.jp
+:purchase_confirm_admin_email: t.nishi@funward.jp
+:purchase_confirm_admin_email2: arai@funward.jp
+
+#PDF から JPEG への出力解像度  150
+:pdf_to_jpg_dpi: 150
+
+:facebook:
+##　テストサーバ
+#  :callback_url: "http://schoolcity.a-it.jp"
+#  :graph_url: "https://graph.facebook.com"
+#  :authorize_uri: "/oauth/authorize"
+#  :api_key: "171921612875765"
+#  :access_token_uri: "/oauth/access_token"
+#  :secret_key: "b5b9474afb9453e27aa7e869b897f694"
+
+#本番サーバ accountは fujikazuが取得 20110928(fujikazu@a-it.jpのアカウントを使って取得しました)
+  :callback_url: "http://scweb.jp"
+  :graph_url: "https://graph.facebook.com"
+  :authorize_uri: "/oauth/authorize"
+  :api_key: "120546108050902"
+  :access_token_uri: "/oauth/access_token"
+  :secret_key: "82b5c393c02f3728a3710b680e4e02d9"
+  
+:twitter:
+#テストサーバ
+  :st_callback_url: "http://schoolcity.a-it.jp"
+  :site_url: "http://twitter.com"
+  :st_key: "fPp91K4hXLV59Y2x8zFfg"
+  :st_secret_key: "7DlfGtmn5T3qZTCpar9tDXQKRxHts8aHzAIanUwQY"
+
+#本番サーバ　(https://dev.twitter.com/apps/new using  fujikazu@a-it.jp account) 
+# https://dev.twitter.com/apps/1280377/show
+  :callback_url: "http://scweb.jp"
+  :site_url: "http://twitter.com"
+  :key: "yG8I89WjSnvIEug4e3m9PQ"
+  :secret_key: "vCJzd47KxtI7FOb0BQ41FzOfxstpfPYrH9MgULiWP8"
+
+  :staging_callback_url: "http://staging.scweb.jp"
+  :staging_key: "XCPmICKOCgaZhpszpXdQYg"
+  :staging_secret_key: "nsDjlm5oPUxPA8gOOxkWMLN917Ro86WchyKo8tXWJw8"
+
+
+:import_notice_mess: "※行数は、ヘッダを取り除いてカウントしています。"
+
+:administrator_pwd: n_school0901
+  

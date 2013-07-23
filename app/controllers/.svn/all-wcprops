@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/repos/shopping02/!svn/ver/28/app/controllers
+END
+base_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/shopping02/!svn/ver/24/app/controllers/base_controller.rb
+END
+product_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/shopping02/!svn/ver/31/app/controllers/product_controller.rb
+END
+shopping_cart_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/shopping02/!svn/ver/30/app/controllers/shopping_cart_controller.rb
+END
+users_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/shopping02/!svn/ver/24/app/controllers/users_controller.rb
+END
+application_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/shopping02/!svn/ver/2/app/controllers/application_controller.rb
+END
