@@ -5,6 +5,8 @@ class UsersController < BaseController
 
   # say something nice, you goof!  something sweet.
   def index
+	pp "ddd"
+	
     redirect_to(:action => 'signup') unless logged_in? || User.count > 0
   end
 
