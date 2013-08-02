@@ -9,7 +9,6 @@ class UsersController < BaseController
   end
 
   def login
-    pp '........'
     return unless request.post?
     self.current_user = User.authenticate(params[:login], params[:password])
     if logged_in?
