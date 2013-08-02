@@ -2,6 +2,7 @@ class ShoppingCartController < BaseController
   
   #显示购物车
   def cart
+	pp "github.com"
     @big_category = BigCategory.all
     @cart = session[:cart]
     pp "cartlast--------------",@cart.to_s
