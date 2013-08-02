@@ -5,6 +5,7 @@ class ProductController < BaseController
     @big_category = BigCategory.all
     @product = Product.find(:all ,:order => "created_at",:limit => 3)
 	pp "ddddd"
+	pp "pull"
   end
   
   #显示所有商品
